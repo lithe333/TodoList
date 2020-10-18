@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- added colour for the textbox -->
+    <LinearLayout
+        android:background="#DCD0FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <!-- This is the text box for typing-->
+        <!-- dp vs sp read here: https://developer.android.com/guide/topics/resources/more-resources.html#Dimension%5D(http://developer.android.com/guide/topics/resources/more-resources.html%23Dimension) -->
+        <EditText
+            android:id="@+id/item_edit_text"
+            android:hint="@string/hint_text"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"/>
+
+        <!-- This is button to add an item to the list-->
+        <Button
+            android:id="@+id/add_btn"
+            android:hint="@string/hint_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- This is do display the list-->
+    <!-- Also added colour for the list -->
+    <ListView
+        android:background="#FFFFAA"
+        android:textColor="#000000"
+        android:id="@+id/items_list"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
