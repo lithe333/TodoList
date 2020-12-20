@@ -26,13 +26,41 @@
             android:layout_weight="4"
             android:layout_height="wrap_content"/>
 
-        <!-- This is button to add an item to the list-->
-        <Button
-            android:id="@+id/add_btn"
-            android:hint="@string/hint_btn"
+        <LinearLayout
             android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+            android:orientation="vertical">
+
+            <!-- This is button to add an item to the list-->
+            <Button
+                android:id="@+id/add_btn"
+                android:hint="@string/hint_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/del_btn"
+                android:hint="@string/hint_btn2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:hint="@string/hint_btn3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/undo_btn"
+                android:hint="@string/hint_btn4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

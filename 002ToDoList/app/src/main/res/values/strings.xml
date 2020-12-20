@@ -2,5 +2,8 @@
     <string name="app_name">002 To Do List</string>
     <string name="hint_text">Enter Item</string>
     <string name="hint_btn">add</string>
+    <string name="hint_btn2">del</string>
+    <string name="hint_btn3">save</string>
+    <string name="hint_btn4">undo</string>
     <!-- I tried to add strings to use in the java files  for the toast messages but it seems to only work from within XML-->
 </resources>
